@@ -58,7 +58,7 @@ This needs an example.
 
 
 <br>
-    <pre style="font-size: 20px;color: #424242; "><b>The Backtracking Algorithm.</b></pre>
+    <pre style="font-size: 22px;color: #424242; "><b>The Backtracking Algorithm.</b></pre>
 
     <pre
         style=" border: 1px solid #D8D8D8; padding: 10px; border-radius: 10px; font-size: 20px; color:#007EB4 ;  width: 96%;">
@@ -86,7 +86,7 @@ This needs an example.
     </pre>
     <br>
 
-    <pre style="margin-left: 0px ; color: #424242; font-size: 20px;"><b>How does this work? </b></pre>
+    <pre style="margin-left: 0px ; color: #424242; font-size: 22px;"><b>How does this work? </b></pre>
     <ul style="list-style-type: disc;color: #858585; margin-left: 14px;  padding: 3px; font-size: 20px;">
         <li>if any child of n is solvable, then n is solvable</li>
         <li>If no child of n is solvable, then n is not solvable.</li> <br>
@@ -126,18 +126,18 @@ a goal node, it is not solvable. This is our base case. In the above code, this 
 </pre>
 
 
-    <ul style="color: #424242; font-size: 20px; margin-left: 10px; padding: 3px;">
+    <ul style="color: #424242; font-size: 22px; margin-left: 15px; padding: 3px;">
         <li><b>To search a tree:</b></li> <br>
 
 
-        <ol style="color: #858585; list-style-type: 1; font-size: 20px; margin-left: -5px; padding: 2px;">
+        <ol style="color: #858585; list-style-type: 1; font-size: 20px; margin-left: 0px; padding: 2px;">
             <li>If the tree consists of a single leaf, test whether it is a goal node.</li>
             <li>Otherwise, search the subtrees until you find one containing a goal node, or until you have searched
                 them all unsuccessfully.</li>
         </ol>
     </ul>
 
-    <pre style="color: #424242; font-size: 20px;"><b>Non-recursive backtracking, using a stack</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Non-recursive backtracking, using a stack</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">Backtracking is a rather typical recursive algorithm, and any recursive algorithm can be rewritten as a stack algorithm. In fact,
 that is how your recursive algorithms are translated into machine or assembly language.
@@ -201,7 +201,7 @@ Here is the recursive backtracking algorithm, modified slightly to print (in rev
             } 
            }
             </pre>
-    <pre style="color: #424242; font-size: 20px;"><b>Keeping backtracking simple</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Keeping backtracking simple</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">
 All of these versions of the backtracking algorithm are pretty simple, but when applied to a real problem, they can get pretty 
@@ -243,7 +243,7 @@ these must also be ordered.
 <!-- You can probably find some way to order the children of a node. If the ordering scheme is simple enough, you should use it; but if it is too cumbersome, you are better off keeping a list of untried children. -->
     </pre>
 
-    <pre style="color: #424242; font-size: 20px;"><b>Example: Tree Search</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Example: Tree Search</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">
 For starters, let's do the simplest possible example of backtracking, which is searching an actual tree. We will also use the 
@@ -324,7 +324,7 @@ Here's a definition of the BinaryTree class:</pre>
         }</pre>
 
     <p style="color:#858585 ; font-size: 20px;">Here's what the numbered lines are doing:
-    <ol style="margin-left: 10px; padding: 2px; color: #858585; font-size: 20px;">
+    <ol style="margin-left: 15px; padding: 2px; color: #858585; font-size: 20px;">
         <li>If we are given a null node, it's not solvable. This statement is so that we can call this method with the
             children of a node, without first checking whether those children actually <br> exist.
         </li> <br>
@@ -371,7 +371,7 @@ Here's a definition of the BinaryTree class:</pre>
 
 
 
-    <p style="color:#424242 ; font-size: 20px;"><b>What are the children?</b></p>
+    <p style="color:#424242 ; font-size: 22px;"><b>What are the children?</b></p>
 
     <pre style="color: #858585; font-size: 20px;">One of the things that simplifies the above binary tree search is that, at each choice point, you can ignore all the previous 
 choices.Previous choices don't give you any information about what you should do next; as far as you know, both the left and the 
@@ -516,7 +516,7 @@ guaranteed. If there is any way to eliminate children (reduce the set of choices
 </pre>
 
 
-    <pre style="font-size: 20px; color: #424242;"> <b>Debugging techniques</b></pre>
+    <pre style="font-size: 22px; color: #424242;"><b>Debugging techniques</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">
 Often our first try at a program doesn't work, and we need to debug it. Debuggers are helpful, but sometimes we need to fall back 
@@ -526,7 +526,7 @@ applied to any program, but are especially useful when you are trying to debug r
 
     <br>
 
-    <pre style="color: #424242; font-size: 20px;"><b>Trick #1: Indent when you print method entries and exits.</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Trick #1: Indent when you print method entries and exits.</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">
 Often, the best debugging technique is to print every method call and return (or at least the most important ones). You probably
@@ -535,7 +535,7 @@ a long list of these, it's hard to match up method exits with their correspondin
 can help.
 </pre>
     <br>
-    <pre style="color: #424242; font-size: 20px;"><b>Trick #2: Use specialized print methods for debugging.</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Trick #2: Use specialized print methods for debugging.</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">Don't clutter up your actual code more than you must. Also, remember that code inserted for debugging purposes can itself contain 
 bugs, or (in the worst case) can affect the results, so be very careful with it.
@@ -630,7 +630,7 @@ To use this code, we modify solvable as follows:
 
 </pre>
 
-    <pre style="color: #424242; font-size: 20px;"><b>Trick #3: Never discard your debugging statements.</b></pre>
+    <pre style="color: #424242; font-size: 22px;"><b>Trick #3: Never discard your debugging statements.</b></pre>
 
     <pre style="color: #858585; font-size: 20px;">
 Writing debugging statements is programming, too. Often it's as much work to debug the debugging statements as it is to debug the 
@@ -688,7 +688,7 @@ The simple solution is to make your debugging statements conditional. For exampl
 your code larger; modern compilers will notice that since the variable debugging is final, it can never be true, and the controlled 
 code will be discarded.</pre>
 
-   <pre style="color: #424242; font-size: 20px;"><b>Trick #4: Create an Exception.</b></pre>
+   <pre style="color: #424242; font-size: 22px;"><b>Trick #4: Create an Exception.</b></pre>
 
    <pre style="color: #858585; font-size: 20px;">If an Exception is thrown, you can get information about just where it happened by sending it the message printStackTrace
 (PrintStream). Since an Exception is an object like any other, you can create and throw your own Exceptions. However, Java 
@@ -731,7 +731,7 @@ print statement.</pre>
 <hr style="color: #D8D8D8; width: 97%; margin-left: 0px;">
 <br>
 
-<pre style="color: #424242; font-size: 20px;"><b>Example: Cindy's Puzzle</b></pre>
+<pre style="color: #424242; font-size: 22px;"><b>Example: Cindy's Puzzle</b></pre>
 
 <pre style="font-size: 20px; color: #858585;">
 I call the following puzzle "Cindy's puzzle" for historical reasons. You have some number n of black marbles and the same number of 
@@ -1079,7 +1079,7 @@ Along with canMove and makeMove, we are using methods puzzleSolved and printBoar
 Here is some output from the program:
 </pre>
 
-<ol style="margin-left: 38px; padding: 0px; color:#007EB4 ; font-size: 20px;" start="16" reversed >
+<ol style="margin-left: 28px; padding: 0px; color:#007EB4 ; font-size: 20px;" start="16" reversed >
    <b > <li ><b style="color: #424242;">WHITE  WHITE  WHITE _______ BLACK  BLACK  BLACK</b></li> 
     <li><b style="color: #424242;">WHITE  WHITE  WHITE  BLACK <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> BLACK BLACK</b></li>
     <li><b style="color: #424242;">WHITE WHITE <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> BLACK WHITE BLACK BLACK</b></li> 
